@@ -6,19 +6,20 @@ export default function Navbar() {
   return (
     <nav className="w-full fixed top-0 left-0 right-0 z-50 bg-transparent">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between text-white">
-        {/* Logo */}
         <Link href="/">
           <h1 className="text-2xl font-bold cursor-pointer">TP Movies</h1>
         </Link>
-
-        {/* Menú de links */}
         <div className="flex space-x-8 text-lg">
-          <Link href="/" className="hover:text-sky-400">Inicio</Link>
-          <Link href="/movies" className="hover:text-sky-400">Películas</Link>
-          <Link href="/genres" className="hover:text-sky-400">Géneros</Link>
+          <Link href="/" className="hover:text-sky-400">
+            Inicio
+          </Link>
+          <Link href="/movies" className="hover:text-sky-400">
+            Películas
+          </Link>
+          <Link href="/genres" className="hover:text-sky-400">
+            Géneros
+          </Link>
         </div>
-
-        {/* Buscador */}
         <form className="relative">
           <input
             type="text"
